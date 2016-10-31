@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/cwq"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#FFFFFF"
+        android:padding="0.5dp"
+         >
+
+        <ImageView
+            android:id="@+id/imgurl"
+            android:layout_width="110dp"
+            android:layout_height="180dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+           android:layout_marginLeft="10dp"
+           android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imgurl"
+            android:layout_toRightOf="@+id/imgurl"
+            android:textSize="12dp"
+            android:textColor="#3c4a55"
+            android:layout_marginLeft="10dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:textSize="10dp"
+              android:textColor="#FF6600"
+            android:layout_alignBottom="@+id/imgurl"
+            android:layout_alignLeft="@+id/name"
+            android:layout_marginLeft="15dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/renshu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textSize="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:text="TextView" />
+
+    </RelativeLayout>
+<View 
+    android:layout_below="@+id/cwq"
+    android:layout_width="150dp"
+    android:layout_height="0.5px"
+    android:background="#e0e8eb"
+    />
+</RelativeLayout>
